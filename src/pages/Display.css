@@ -1,0 +1,9 @@
+html > body {
+  background-color: wheat;
+}
+
+.pokemonInfo {
+  position: absolute;
+  top: 45px;
+  left: 150px;
+}
