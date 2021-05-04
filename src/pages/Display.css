@@ -3,7 +3,16 @@ html > body {
 }
 
 .pokemonInfo {
-  position: absolute;
-  top: 45px;
-  left: 150px;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.PokemonList {
+  flex: 0 0 auto;
+}
+
+.parentComponent {
+  display: flex;
+  justify-content: left;
 }

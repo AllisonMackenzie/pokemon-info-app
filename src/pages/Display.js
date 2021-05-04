@@ -6,13 +6,13 @@ import './Display.css';
 
 export default function Display() {
   return (
-    <React.Fragment>
+    <div className="parentComponent">
       <div className="pokemonList">
         <PokemonList />
       </div>
       <div className="pokemonInfo">
         <PokemonInfo />
       </div>
-    </React.Fragment>
+    </div>
   );
 }

@@ -1,23 +1,8 @@
 import React, {useState, useEffect, Component} from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import PokemonList from './components/PokemonList';
 import Display from './pages/Display';
-//import PokemonList from './components/PokemonList';
-//
-//import Pagination from './pages/Pagination';
+import PokemonInfo from './components/PokemonInfo';
 
-//const NavRoute = ({exact, path, component: Component, navbar}) => (
-//  <Route
-//    exact={exact}
-//    path={path}
-//    render={(props) => (
-//      <div>
-//        <Component {...props} />
-//      </div>
-//    )}
-//  />
-//);
-//
 export default function App() {
   return (
     <React.Fragment>

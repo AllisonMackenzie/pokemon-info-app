@@ -87,3 +87,5 @@ const getLastPart = (url) => {
     ? parts[parts.length - 1]
     : parts[parts.length - 2];
 };
+
+//https://www.npmjs.com/package/axios-cache-adapter
