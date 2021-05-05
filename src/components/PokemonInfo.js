@@ -45,12 +45,62 @@ export default function PokemonInfo() {
           src={`sprites/pokemon/animated/shiny/${currentPokemonID}.gif`}
           alt="Shiny goes here"
         />
-        <div>{`#${currentPokemonID}`}</div>
-        <div className="type1">{currentPokemonJSON.types[0].type.name}</div>
-        <div className="type2">
-          {currentPokemonJSON.types[1] !== undefined
-            ? currentPokemonJSON.types[1].type.name
-            : null}
+        <div>{`ID #${currentPokemonID}`}</div>
+        <div className="types">
+          <div>
+            <br />
+            TYPES
+          </div>
+          <div className="type1">{currentPokemonJSON.types[0].type.name}</div>
+          <div className="type2">
+            {currentPokemonJSON.types[1] !== undefined
+              ? currentPokemonJSON.types[1].type.name
+              : null}
+          </div>
+        </div>
+        <div className="abilites">
+          <div>
+            <br />
+            ABILITIES
+          </div>
+          <div className="ability1">
+            {currentPokemonJSON.abilities[0].ability.name}
+          </div>
+          <div className="ability2">
+            {currentPokemonJSON.abilities[1] !== undefined
+              ? currentPokemonJSON.abilities[1].ability.name
+              : null}
+          </div>
+          <div className="ability3">
+            {currentPokemonJSON.abilities[2] !== undefined
+              ? `HIDDEN: ${currentPokemonJSON.abilities[2].ability.name}`
+              : null}
+          </div>
+          <div className="base-stats">
+            <div>
+              <br />
+              BASE STATS
+            </div>
+            <div className="hp">{`HP: ${currentPokemonJSON.stats[0].base_stat}`}</div>
+            <div className="attack">
+              {`Atk: ${currentPokemonJSON.stats[1].base_stat}`}
+            </div>
+            <div className="defense">
+              {`Def: ${currentPokemonJSON.stats[2].base_stat}`}
+            </div>
+            <div className="special-attack">
+              {`Sp. Atk: ${currentPokemonJSON.stats[3].base_stat}`}
+            </div>
+            <div className="special-defense">
+              {`Sp. Def: ${currentPokemonJSON.stats[4].base_stat}`}
+            </div>
+            <div className="speed">{`Speed: ${currentPokemonJSON.stats[5].base_stat}`}</div>
+          </div>
+          <div className="moves">
+            <br />
+            MOVES
+          </div>
+          {`moves go here :D`}
         </div>
       </div>
     </React.Fragment>

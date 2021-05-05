@@ -12,6 +12,6 @@ Clone or Download repository, open using Node.js and run the following command:
 
 Then navigate to `http://localhost:3000` in your web browser of choice. It should run after a brief build period.
 
-### License
+## License
 
 Project made for use under MIT license. :)
