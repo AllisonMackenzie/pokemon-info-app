@@ -1,3 +1,10 @@
 .pokeInfoApp {
-  color: red;
+  text-transform: capitalize;
+}
+
+.pokemonInfoDisplay {
+  width: 100%;
+}
+
+.pokemon {
 }

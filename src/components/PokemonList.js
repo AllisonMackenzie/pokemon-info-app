@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import Pagination from '../pages/Pagination';
 import axios from 'axios';
 import './PokemonList.css';
@@ -47,6 +47,10 @@ export default function PokemonList() {
 
   return (
     <React.Fragment>
+      <Pagination
+        nextPage={nextPageURL ? nextPage : null}
+        previousPage={previousPageURL ? previousPage : null}
+      />
       <div>Pokemon List</div>
       <div>---------------</div>
       <div>

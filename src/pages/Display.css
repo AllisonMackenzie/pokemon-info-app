@@ -2,17 +2,20 @@ html > body {
   background-color: wheat;
 }
 
-.pokemonInfo {
-  display: flex;
-  flex: 1 0 auto;
-  justify-content: center;
-}
-
-.PokemonList {
-  flex: 0 0 auto;
-}
-
 .parentComponent {
   display: flex;
   justify-content: left;
+  height: 100%;
+  overflow: hidden;
+}
+
+.pokemonInfo {
+  flex: 0 1 auto;
+  overflow: hidden auto;
+  width: 100%;
+}
+
+.pokemonList {
+  overflow: auto;
+  width: 300px;
 }
