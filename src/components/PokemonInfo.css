@@ -8,3 +8,7 @@
 
 .pokemon {
 }
+
+.capitalize {
+  text-transform: capitalize;
+}

@@ -17,5 +17,5 @@ html > body {
 
 .pokemonList {
   overflow: auto;
-  width: 300px;
+  width: 350px;
 }

@@ -2,13 +2,14 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import Pagination from '../pages/Pagination';
 import axios from 'axios';
+import {setupCache} from 'axios-cache-adapter';
 import './PokemonList.css';
 
 export default function PokemonList() {
   const [pokemonName, setPokemonName] = useState([]);
   const [pokemonURL, setPokemonURL] = useState([]);
   const [currentPageURL, setCurrentPageURL] = useState(
-    'https://pokeapi.co/api/v2/pokemon'
+    'https://pokeapi.co/api/v2/pokemon?offset=0&limit=100'
   );
   const [nextPageURL, setNextPageURL] = useState();
   const [previousPageURL, setPreviousPageURL] = useState();
@@ -51,8 +52,6 @@ export default function PokemonList() {
         nextPage={nextPageURL ? nextPage : null}
         previousPage={previousPageURL ? previousPage : null}
       />
-      <div>Pokemon List</div>
-      <div>---------------</div>
       <div>
         {pokemonName.map((pokeName, index) => (
           <div key={pokeName}>
@@ -66,6 +65,7 @@ export default function PokemonList() {
                   pokemonURL[index]
                 )}.png`}
                 alt={`${pokeName} icon`}
+                loading="lazy"
                 width="38px"
                 height="38px"
               />
@@ -91,5 +91,3 @@ const getLastPart = (url) => {
     ? parts[parts.length - 1]
     : parts[parts.length - 2];
 };
-
-//https://www.npmjs.com/package/axios-cache-adapter
