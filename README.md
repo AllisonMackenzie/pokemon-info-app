@@ -4,7 +4,7 @@ A simple web app showcasing some general info about each pokemon such as their n
 
 ## How To Run
 
-Visit live demo here: -does not exist yet-
+Visit live demo here: https://pokemoninfoapp.netlify.app/
 
 Clone or Download repository, open using Node.js and run the following command:
 
