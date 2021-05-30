@@ -43,7 +43,7 @@ export default function PokemonList() {
   };
 
   if (loading) {
-    return 'If this is your first time being here, click a Pokemon to the left, otherwise... Loading, please wait!';
+    return 'Loading, please wait!';
   }
 
   return (
